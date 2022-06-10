@@ -1,0 +1,65 @@
+.app {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 2fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title title"
+    "match_settings match_settings"
+    "player1_settings player2_settings"
+    "commentator_settings commentator_settings"
+    "logos logos"
+    "submit submit";
+}
+
+.submit {
+  justify-self: center;
+  align-self: center;
+  grid-area: submit;
+}
+
+.logos {
+  justify-self: center;
+  grid-area: logos;
+}
+
+.title {
+  justify-self: center;
+  align-self: center;
+  grid-area: title;
+}
+
+.match_settings {
+  justify-self: center;
+  grid-area: match_settings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player1_settings {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: player1_settings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player2_settings {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: player2_settings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.commentator_settings {
+  justify-self: center;
+  grid-area: commentator_settings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
